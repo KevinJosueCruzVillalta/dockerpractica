@@ -70,4 +70,51 @@ print_r(array_unique($my_array));
 for($index = 0; $index < 10; $index++){
     echo $index . "\n";
 }
-?>
+
+foreach($my_array as $my_item){
+    echo $my_item . "\n";
+}
+
+$index = 0;
+while($index <= sizeof($my_array)){
+    echo $my_array[$index] . "\n";
+    $index++;
+}
+
+$my_int = 13;
+$my_int = "hola";
+
+if($my_int == 11 && $my_string == "hola"){
+    echo "El valor de mi integer es 11\n";
+}else if($my_int == 12 || $my_string == "hola"){
+    echo "El valor de mi integer es 12\n";
+} 
+else{
+    echo "El valor de mi integer no es 11\n";
+}
+
+//Funciones
+
+function print_number(int $my_number) {
+    echo $my_number . "\n";
+}
+
+print_number(10);
+print_number(11);
+print_number(12);
+
+
+class MyClass{
+    public $name;
+    public $age;
+
+    function __construct($name, $age){
+        $this->name = $name;
+        $this->age = $age;
+    }
+}
+
+$my_class = new MyClass("Kevin", 22);
+print_r($my_class);
+echo $my_class->name . "\n";
+echo gettype($my_class) . "\n";
