@@ -54,5 +54,20 @@ print_r($my_array);
 
 //Diccionario
 
+$my_dict = array("string" => $my_string, "int" => $my_int, "bool" => $my_bool);
+print_r($my_dict);
+echo $my_dict["int"] . "\n";
 
+//Set
+
+array_push($my_array, "Brais");
+array_push($my_array, "Brais");
+print_r($my_array);
+print_r(array_unique($my_array));
+
+//Flujos
+
+for($index = 0; $index < 10; $index++){
+    echo $index . "\n";
+}
 ?>
