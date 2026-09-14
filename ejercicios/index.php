@@ -30,9 +30,29 @@ $my_double = 6.5;
 echo gettype($my_double) . "\n";
 echo $my_int + $my_double. "\n";
 
-$my_bool = true;
-echo $my_bool . "\n";
 $my_bool = false;
 echo $my_bool . "\n";
+$my_bool = true;
+echo $my_bool . "\n";
 echo gettype($my_bool) . "\n";
+
+echo "El valor de mi integer es " . $my_int . " y el de boolean es: " . $my_bool . "\n";
+
+//Constantes
+
+const MY_CONSTANT = "Valor de la constante";
+echo MY_CONSTANT . "\n";
+
+// Listas
+
+$my_array = [$my_string, $my_int, $my_double];
+echo gettype($my_array) . "\n";
+echo $my_array[0] . "\n";
+array_push($my_array, $my_bool);
+print_r($my_array);
+// echo $my_array[3] . "\n"; //error
+
+//Diccionario
+
+
 ?>
