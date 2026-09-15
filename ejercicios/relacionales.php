@@ -17,5 +17,5 @@ echo "<br>";
 var_dump($x > $z);
 
 //Nave espacial
-echo 5 <=> 3;
+echo 5 <=> 10; //-1
 ?>
