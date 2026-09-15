@@ -18,7 +18,7 @@ $contador = 1;
 do{
     echo "Ejecucion #$contador";
     $contador = $contador + 1; //contador ++;
-    echo "<br>"
+    echo "<br>";
 }while($contador <= 3);
 
 ?>
